@@ -1,4 +1,4 @@
-/// @file hello namespace.cpp
+/// @file hello_namespace.cpp
 /// @brief hello world using namespace standard
 /// @author momani@chapman.edu
 #include <iostream>
