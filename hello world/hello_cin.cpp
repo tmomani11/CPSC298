@@ -1,5 +1,5 @@
 /// @file hello_cin.cpp
-/// @brief program that outputs what user enters
+/// @brief program that outputs what the user enters
 /// @author momani@chapman.edu
 #include <iostream>
 #include <string>
