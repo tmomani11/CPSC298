@@ -1,4 +1,4 @@
-/// @file hello cin.cpp
+/// @file hello_cin.cpp
 /// @brief program that outputs what user enters
 /// @author momani@chapman.edu
 #include <iostream>
