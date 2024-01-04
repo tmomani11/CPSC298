@@ -1,3 +1,6 @@
+/// @file main.cpp
+/// @brief program that computes muscial notes
+/// @author momani@chapman.edu
 
 #include <iostream>
 #include <cmath>
