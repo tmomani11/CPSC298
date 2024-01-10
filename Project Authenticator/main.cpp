@@ -1,3 +1,6 @@
+/// @file authenticator.cpp
+/// @brief Program that calculates the value of pi using Leibnitz formula for pi
+/// @author momani@chapman.edu
 #include <iostream>
 #include <string>
 
@@ -23,6 +26,7 @@ int main() {
     cout << "Enter the third character of the message code: " << endl;
     cin >> char3Input;
     codeInput += char3Input;
+    cout << endl;
     int checksum = (int(char1Input) + int(char2Input) + int(char3Input)) % 7;
     codeAuthenticator += k_cAuthenticatorCodeCharacter1;
     codeAuthenticator += k_cAuthenticatorCodeCharacter2;
@@ -38,7 +42,7 @@ int main() {
             cout << "Concurrence: Message is authentic \n\n";
             cout << "Characterization of message code\n";
             cout << "--------------------------------\n";
-            cout << "ASCII values of message code characters: " << int(char1Input) << " " << int(char2Input) << " "
+            cout << "ASCII values of message code characters: " << int(char1Input) << ", " << int(char2Input) << ", "
                  << int(char3Input) << endl;
             cout << "Sum of ASCII values for message code characters: " << sum << endl;
             cout << "Message code checksum is valid: " << checksum << endl;
@@ -48,7 +52,7 @@ int main() {
 
             cout << "Characterization of message code\n";
             cout << "--------------------------------\n";
-            cout << "ASCII values of message code characters: " << int(char1Input) << " " << int(char2Input) << " "
+            cout << "ASCII values of message code characters: " << int(char1Input) << ", " << int(char2Input) << ", "
                  << int(char3Input) << endl;
             cout << "Sum of ASCII values for message code characters: " << sum << endl;
             cout << "Message code checksum is valid: " << checksum << endl;
@@ -75,11 +79,11 @@ int main() {
         }
     } else {
         cout << "\nMessage is invalid" << endl;
-        cout << "concurrence :message is invalid\n\n";
+        cout << "concurrence: message is invalid\n\n";
 
         cout << "Characterization of message code\n";
         cout << "--------------------------------\n";
-        cout << "ASCII values of message code characters: " << int(char1Input) << " " << int(char2Input) << " "
+        cout << "ASCII values of message code characters: " << int(char1Input) << ", " << int(char2Input) << ", "
              << int(char3Input) << endl;
         cout << "Sum of ASCII values for message code characters: " << sum << endl;
         cout << "Message code checksum is invalid: " << checksum <<"; expected: " <<k_iValidCodeChecksum <<endl;
