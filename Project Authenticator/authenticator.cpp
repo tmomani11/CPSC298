@@ -1,5 +1,6 @@
 /// @file authenticator.cpp
-/// @brief Program that calculates the value of pi using Leibnitz formula for pi
+/// @brief Program takes user input for a three-character message code, calculates its checksum,
+///and determines whether the message is authentic based on predefined characters and a valid checksum.
 /// @author momani@chapman.edu
 #include <iostream>
 #include <string>
