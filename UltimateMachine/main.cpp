@@ -4,8 +4,6 @@
 #include <iostream>
 
 class CUltimateMachine {
-private:
-    bool m_bState; // true for On, false for Off
 
 public:
     CUltimateMachine() : m_bState(false) {
@@ -17,10 +15,14 @@ public:
     }
 
     void displayState() {
-        if (m_bState)
-            std::cout << "Ultimate Machine is ON" << std::endl;
-        else
-            std::cout << "Ultimate Machine is OFF" << std::endl;
+       switch(m_bState){
+           case true:
+               std::cout << "Ultimate Machine is ON" << std::endl;
+               break;
+            case false:
+               std::cout << "Ultimate Machine is OFF" << std::endl;
+               break;
+       }
     }
 
     void turnOn() {
@@ -28,14 +30,17 @@ public:
         displayState();
         m_bState = false;
     }
+private:
+    bool m_bState; // true for On, false for Off
+
 };
 
 int main() {
     std::cout << "The Ultimate Machine Simulation" << std::endl;
 
-    CUltimateMachine ultimate;
-    ultimate.displayState();
-    ultimate.turnOn();
+    CUltimateMachine ultimate;  //declare an instance of the class
+    ultimate.displayState();   //display its state
+    ultimate.turnOn();         // Turn on the Ultimate machine
 
     return 0;
 }
