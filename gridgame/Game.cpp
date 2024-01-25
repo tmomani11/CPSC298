@@ -1,6 +1,6 @@
 /// @file Game.cpp
 /// @brief Implementation file for Game class
-/// @author outstanding.student@chapman.edu
+/// @author momani@chapman.edu
 /// CPSC 298-6 Colloquium: Programming in C++
 
 #include <iostream> // defines std::cout
