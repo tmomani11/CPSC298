@@ -1,3 +1,6 @@
+/// @file main.cpp
+/// @brief program that computes area and perimeter of given shape
+/// @author momani@chapman.edu
 #include  <iostream>
 #include <cmath>
 
